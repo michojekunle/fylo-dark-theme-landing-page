@@ -28,7 +28,7 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     color: hsl(0, 0%, 100%);
-    padding:0 4rem;
+    padding:0 10rem;
 }
 
 /* Styles for general headings font-family */
@@ -164,14 +164,15 @@ main button:hover {
 .stay-productive {
     display: flex;
     align-items: center;
-    gap: 12rem;
+    justify-content: space-between;
+    gap: 5rem;
     height: 80vh;
     width: 100%;
-    max-width: 100rem;
+    max-width: 120rem;
 }
 
 .stay-productive .illustration {
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -183,16 +184,16 @@ main button:hover {
 
 .stay-productive .content h1 {
     margin: 1.5rem 0;
-    width: 60%;
-    font-size: 2.8rem;
-    line-height: 3.5rem;
+    width: 70%;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
 } 
 
 .stay-productive .content p {
     opacity: .7;
-    width: 70% ;
+    width: 90% ;
     margin: 1.5rem 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .stay-productive .content a {
@@ -201,7 +202,7 @@ main button:hover {
     border-bottom: 1px solid hsl(176, 68%, 64%);
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: left;
     width:fit-content;
     padding-bottom: 2px;
@@ -218,6 +219,58 @@ main button:hover {
     margin-left: .5rem;
 }
 
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url('./images/bg-quotes.png');
+    background-repeat: no-repeat;
+    background-position: top 0, left 0;
+    background-size: 4rem 4rem;
+    padding: 3.4rem 0;
+}
+
+.testimonials .testimonial-card {
+    flex-basis: 35rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 40rem;
+    margin:0 4rem 4rem 0;
+    border-radius: 4px;
+    padding: 2.5rem 1.8rem;
+    background-color: hsl(219, 30%, 18%);
+}
+
+.testimonials .testimonial-card>p {
+    opacity: .7;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.testimonials .testimonial-card .profile {
+    display: flex; align-items: center;
+}
+
+.testimonials .testimonial-card .profile img{
+    border-radius: 50%;
+    width: 3.5rem;
+}
+
+.testimonials .testimonial-card .profile div {
+    display: flex;
+    flex-direction: column;
+    margin-left: .8rem;
+    opacity: .7;
+    font-size: 1.1rem;
+}
+
+.testimonials .testimonial-card .profile div small{
+    opacity: .5;
+    font-size: .9rem;
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
