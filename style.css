@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    background-color:hsl(218, 28%, 13%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background: url('./images/bg-curvy-desktop.svg');
+    background-size: 100% 80%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 100%);
+    padding:0 4rem;
+}
+
+/* Styles for general headings font-family */
+
+.h {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header .brand-logo img {
+    width: 7rem;
+}
+
+header .nav-links  {
+    display: flex;
+    align-items: center;
+}
+
+header .nav-links .nav-link {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+header .nav-links .nav-link a {
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+    opacity: .7;
+    transition: .4s;
+}
+
+header .nav-links .nav-link a:hover {
+    opacity: 1;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .main-illustration {
+    width: 100%;
+    max-width: 500px;
+}
+
+main .main-illustration img {
+    width: 100%;
+}
+
+
+main h1 {
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 500px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+main p {
+    width: 100%;
+    max-width: 350px;
+    font-size: 1.4rem;
+    text-align: center;
+    opacity: .7;
+}
+
+main button {
+    margin: 20px 0;
+    padding: 1.4rem 8rem;
+    border-radius: 5rem;
+    background: linear-gradient(90deg, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 70%);
+    color:hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .7s;
+    border: none;
+}
+
+main button:hover {
+    background: linear-gradient(90deg, hsl(176, 68%, 64%) 0%, hsl(176, 64%, 50%) 70%);
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

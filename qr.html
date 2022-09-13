@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>QR-Code Generator</title>
+<style>
+	* {
+      margin: 0px; 
+      padding: 0px;
+      font-family: monospace, Arial, sans-serif;
+  	}
+	h1 {
+      text-align: center; 
+      text-shadow: 2px 2px 0px rgba(255,255,255,.7), 5px 7px 0px rgba(0, 0, 0, 0.1);  font-size:50px; margin-top:40px; color:#fff; 
+  	}
+    input[type=text] {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 26px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size:16px;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 26px;
+        border: none;
+        cursor: pointer;
+        width: 90%;
+        font-size:20px;
+    }
+    button:hover {
+        opacity: 0.8;
+    }
+</style>
+<!--Jquery 3.2.1-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body background="../background1.png">
+<h1>QR-Code Generator</h1>
+<div id="form-wrapper" style="width:46%; float:left; border:5px solid rgba(255,255,255,0.6); margin-top:20px; padding:10px">
+    <form id="generator">     
+        <label for="codeSize" style="font-size:20px; margin-right:20px; color:#fff;">Select QR Size:</label>
+        <select id="codeSize" name="codeSize" style="width:260px; height:40px; ">
+            <option value="75">Mini</option>
+            <option value="155">Small</option>
+            <option value="186">Medium</option>
+            <option value="248" selected="selected">Large</option>
+            <option value="300">XL</option>
+            <option value="450">XXL</option>
+        </select>
+        <input type="text" onclick="myFunction()" id="codeData" name="codeData" size="50" placeholder="Enter a url or text" style="margin-top:20px" autocomplete="off"/ >
+        <br>
+        <button id="generate">generate</button>
+    </form>
+    <div id="alert" style="height:20px; text-align:center; margin:10px auto"></div>
+</div>
+
+  <div style="float:right;">
+   <div id="image" style="margin:auto">Image will show here</div>
+   <div id="link" style="margin-top:10px; text-align:center"></div>
+  </div>
+  
+  <div id="code" style="float:left; width:100%; height:20px; text-align:center; margin-top:10px"></div>
+<script>
+function myFunction() {
+     document.getElementById("alert").innerHTML = "";
+	}
+$("#generate").on("click", function () {
+var data = $("#codeData").val();
+var size = $("#codeSize").val();
+if(data == "") {
+    $("#alert").append("<p style='color:#fff;font-size:20px'>Please Enter A Url Or Text</p>"); // If Input Is Blank
+    return false;
+} else {
+    if( $("#image").is(':empty')) {
+		
+	  //QR Code Image
+      $("#image").append("<img src='http://chart.apis.google.com/chart?cht=qr&chl=" + data + "&chs=" + size + "' alt='qr' />");
+	  
+	  //This Provide An Image Download Link
+      $("#link").append("<a style='color:#fff;' href='http://chart.apis.google.com/chart?cht=qr&chl=" + data + "&chs=" + size + "'>Download QR Code</a>");
+	  
+	  //This Provide the Image Link Path In Text
+      $("#code").append("<p style='color:#fff;'><strong>Image Link:</strong> http://chart.apis.google.com/chart?cht=qr&chl=" + data + "&chs=" + size + "</p>");
+      return false;
+} else {
+      $("#image").html("");
+      $("#link").html("");
+      $("#code").html("");
+	  
+      //QR Code Image
+      $("#image").append("<img src='http://chart.apis.google.com/chart?cht=qr&chl=" + data + "&chs=" + size + "' alt='qr' />");
+	  
+	  //This Provide An Image Download Link
+      $("#link").append("<a style='color:#fff;' href='http://chart.apis.google.com/chart?cht=qr&chl=" + data + "&chs=" + size + "'>Download QR Code</a>");
+	  
+	  //This Provide the Image Link Path In Text
+      $("#code").append("<p style='color:#fff;'><strong>Image Link:</strong> http://chart.apis.google.com/chart?cht=qr&chl=" + data + "&chs=" + size + "</p>");
+      return false;
+    }
+  }
+});
+</script>
+</body>
+</html>
