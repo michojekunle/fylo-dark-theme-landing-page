@@ -349,7 +349,7 @@ footer {
     background-color: hsl(216, 53%, 9%);
     width: 100%;
     color: hsl(0, 0%, 100%);
-    padding: 19rem 8rem 4rem 8rem; 
+    padding: 19rem 10rem 4rem 10rem; 
     display: flex;
     flex-direction: column;
 }
@@ -367,14 +367,13 @@ footer {
 .footer-body .footer-body-content {
     flex: 1;
     font-size: 1.4rem;
-    opacity: .7;
 }
 
 .footer-body .footer-body-content:nth-child(1) {
     display: flex;
     justify-content: start;
     align-items: flex-start;
-    flex: 2;
+    flex: 3;
 }
 
 .footer-body .footer-body-content img {
@@ -388,7 +387,46 @@ footer {
 
 .footer-body .footer-body-content ul li {
     list-style: none;
+    margin: 1rem 0;
+    opacity: .7;
+    transition: .5s;
+    cursor: pointer;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.footer-body .footer-body-content ul li:hover {
+    opacity: 1;
+}
+
+.footer-body .footer-body-content:nth-child(2) {
+    flex: 2 ;
+}
+
+
+.footer-body .footer-body-content:nth-child(2) p {
+    margin: .7rem 0; 
+}
+
+.footer-body .footer-body-content:last-child {
+    flex: 2;
+
+}
+
+
+.footer-body .footer-body-content:last-child a {
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 5px 7px;
+    margin: 0 .6rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    color:hsl(0, 0%, 100%);
+    transition: all .4s ease;
+}
+
+.footer-body .footer-body-content:last-child a:hover {
+    border: 1px solid hsl(177, 67%, 65%);
+    color:hsl(177, 67%, 65%)
+}
+
+
+.attribution { font-size: 11px; text-align: center; background-color: hsl(216, 53%, 9%); width: 100%; color: #fff; padding: 2rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
