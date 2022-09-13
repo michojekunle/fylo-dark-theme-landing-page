@@ -14,6 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .container {
@@ -280,7 +281,7 @@ main button:hover {
     text-align: center;
     background-color: hsl(217, 28%, 15%);
     padding: 4rem;
-    border-radius: 5px;
+    border-radius: 5px;transform: translateY(50%);
 }
 
 .early-access h1 {
@@ -344,7 +345,10 @@ main button:hover {
     background: linear-gradient(90deg, hsl(177, 67%, 65%) 0%, hsl(177, 67%, 70%) 70%);
 }
 
-
+footer {
+    background-color: hsl(216, 53%, 9%);
+    width: 100%;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
