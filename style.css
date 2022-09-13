@@ -348,6 +348,46 @@ main button:hover {
 footer {
     background-color: hsl(216, 53%, 9%);
     width: 100%;
+    color: hsl(0, 0%, 100%);
+    padding: 19rem 8rem 4rem 8rem; 
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-header img {
+    width: 15rem;
+    margin-bottom: 3rem;
+}
+
+.footer-body {
+    display: flex;
+    gap: 8rem;
+}
+
+.footer-body .footer-body-content {
+    flex: 1;
+    font-size: 1.4rem;
+    opacity: .7;
+}
+
+.footer-body .footer-body-content:nth-child(1) {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex: 2;
+}
+
+.footer-body .footer-body-content img {
+    width: 1.2rem;
+    margin-right: .8rem;
+}
+
+.footer-body .footer-body-content ul {
+    padding: 0;
+}
+
+.footer-body .footer-body-content ul li {
+    list-style: none;
 }
 
 .attribution { font-size: 11px; text-align: center; }
