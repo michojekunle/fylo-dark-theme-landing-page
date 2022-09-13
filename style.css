@@ -425,7 +425,8 @@ footer {
     color:hsl(177, 67%, 65%)
 }
 
-
+.attribution { font-size: 11px; text-align: center; background-color: hsl(216, 53%, 9%); width: 100%; color: #fff; padding: 2rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
 
 @media screen and (max-width: 768px) {
     .container {
@@ -542,11 +543,9 @@ footer {
     .stay-productive .content h1 {
         width: 100%;
     }
-
+    .attribution { font-size: 8px; text-align: center; background-color: hsl(216, 53%, 9%); width: 100%; color: #fff; padding: 2rem;}
 
 }
 
 
 
-.attribution { font-size: 11px; text-align: center; background-color: hsl(216, 53%, 9%); width: 100%; color: #fff; padding: 2rem;}
-.attribution a { color: hsl(228, 45%, 44%); }
