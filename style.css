@@ -114,8 +114,10 @@ main button {
 }
 
 main button:hover {
-    background: linear-gradient(90deg, hsl(176, 68%, 64%) 0%, hsl(176, 64%, 50%) 70%);
+    background: linear-gradient(90deg, hsl(177, 67%, 65%) 0%, hsl(177, 67%, 70%) 70%);
 }
+
+
 
 
 
