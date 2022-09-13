@@ -10,7 +10,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     width: 100%;
-    background-color:hsl(218, 28%, 13%);
+    background-color: hsl(217, 28%, 15%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@ body {
     height: auto;
     min-height: 100vh;
     background: url('./images/bg-curvy-desktop.svg');
-    background-size: 150% 90%;
+    background-size: 180% 70%;
     background-position: bottom;
     background-repeat: no-repeat;
     color: hsl(0, 0%, 100%);
@@ -38,7 +38,6 @@ body {
 }
 
 header {
-    background-color: none;
     display: flex;
     width: 100%;
     align-items: center;
@@ -48,7 +47,7 @@ header {
 }
 
 header .brand-logo img {
-    width: 7rem;
+    width: 10rem;
 }
 
 header .nav-links  {
@@ -59,6 +58,7 @@ header .nav-links  {
 header .nav-links .nav-link {
     list-style: none;
     margin: 0 1rem;
+    font-size: 1.4rem;
 }
 
 header .nav-links .nav-link a {
@@ -191,7 +191,7 @@ main button:hover {
 
 .stay-productive .content p {
     opacity: .7;
-    width: 90% ;
+    width: 110% ;
     margin: 1.5rem 0;
     font-size: 1.4rem;
 }
@@ -271,6 +271,79 @@ main button:hover {
     opacity: .5;
     font-size: .9rem;
 }
+
+.early-access {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsl(217, 28%, 15%);
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.early-access h1 {
+    font-size: 2.4rem;
+}
+
+.early-access p {
+    opacity: .7;
+    margin-top: 2rem;
+    width: 80%;
+    font-size: 1.4rem;
+}
+
+.early-access form {
+    width: 80%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.early-access .input-field {
+    width: 60%;
+}
+
+.early-access .input-field input {
+    width: 100%;
+    outline: none;
+    padding: 1.4rem 3rem;
+    border-radius: 5rem;
+    background: hsl(0, 0%, 85%);
+    font-weight: 300;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .7s;
+    border: none;
+}
+
+.early-access .input-field small {
+    font-size: .9rem;
+    color: hsl(0, 100%, 63%);
+    margin-top: .5rem;
+    margin-left: 2.5rem;
+    display: block;
+    text-align: left;
+}
+
+.early-access form button {
+    padding: 1.4rem 5rem;
+    border-radius: 5rem;
+    background: linear-gradient(90deg, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 70%);
+    color:hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .7s;
+    border: none;
+}
+
+.early-access form button:hover {
+    background: linear-gradient(90deg, hsl(177, 67%, 65%) 0%, hsl(177, 67%, 70%) 70%);
+}
+
 
 
 .attribution { font-size: 11px; text-align: center; }
